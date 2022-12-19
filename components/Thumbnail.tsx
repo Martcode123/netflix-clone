@@ -27,9 +27,7 @@ function Thumbnail({ movie }: Props) {
           setShowModal(true);
         }}
       />
-      {/* <h1 className="pt-9  absolute text-1xl text-center  md:text-2xl lg:text-2xl font-bold">
-        {movie?.title || movie?.name || movie?.original_name}
-      </h1> */}
+      
     </div>
   );
 }
