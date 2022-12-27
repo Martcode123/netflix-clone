@@ -12,17 +12,18 @@ import ReactPlayer from "react-player/lazy";
 import { FaPlay } from "react-icons/fa";
 import { PlusIcon, SpeakerWaveIcon } from "@heroicons/react/24/solid";
 
+
 function Modal() {
   const [showModal, setShowModal] = useRecoilState(modalState);
   const [movie, setMovie] = useRecoilState(movieState);
   const [trailer, setTrailer] = useState("");
   const [genres, setGenres] = useState<Genre[]>([]);
   const [muted, setMuted] = useState(false);
-
+  
   useEffect(() => {
     if (!movie) return
-        
-
+    
+    
     async function fetchMovie() {
       const data = await fetch(
         `https://api.themoviedb.org/3/${
@@ -65,13 +66,13 @@ function Modal() {
 
         <div className="relative pt-[56.25%]">
           <ReactPlayer
-            url={`https//www.youtube.com/watch?v=${trailer} `}
+            url={`http//www.youtube.com/embed/${trailer} `}
             width="100%"
             height="100%"
             style={{ position: "absolute", top: "0", left: "0" }}
             playing
             muted={muted}
-            
+             
             
           />
           <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
