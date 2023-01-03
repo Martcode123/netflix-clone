@@ -7,7 +7,7 @@ import { Movie } from "../typings";
 import Row from "../components/Row";
 import useAuth from "../hooks/useAuth";
 import { useRecoilValue } from "recoil";
-import { modalState } from "./atoms/modalAtom";
+import { modalState } from "../public/atoms/modalAtom";
 import Modal from "../components/Modal";
 
 interface Props {

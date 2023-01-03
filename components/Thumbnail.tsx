@@ -1,5 +1,5 @@
 import Image from "next/legacy/image";
-import { modalState, movieState } from "../pages/atoms/modalAtom";
+import { modalState, movieState } from "../public/atoms/modalAtom";
 import { Movie } from "../typings";
 import { useRecoilState } from "recoil"
 

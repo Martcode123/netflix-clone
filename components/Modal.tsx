@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import MuiModal from "@mui/material/Modal";
-import { modalState, movieState } from "../pages/atoms/modalAtom";
+import { modalState, movieState } from "../public/atoms/modalAtom";
 import { useRecoilState } from "recoil";
 import {
   HandThumbUpIcon,
@@ -49,7 +49,6 @@ function Modal() {
   const handleClose = () => {
     setShowModal(false);
   };
-  console.log(trailer);
   return (
     <MuiModal
       open={showModal}
@@ -71,9 +70,7 @@ function Modal() {
             height="100%"
             style={{ position: "absolute", top: "0", left: "0" }}
             playing
-            muted={muted}
-             
-            
+            muted={muted}           
           />
           <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
             <div className="flex space-x-2">
